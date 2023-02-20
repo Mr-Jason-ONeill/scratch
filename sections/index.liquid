@@ -3,3 +3,16 @@
 {% for product in collections['frontpage'].products %}
   {% render 'product-item', product: product %}
 {% endfor %}
+
+{% schema %}
+  {
+    "name": "main",
+    "settings": [
+      {
+        "type": "text",
+        "id": "main",
+        "label": "Main"
+      }
+    ]
+  }
+{% endschema %}

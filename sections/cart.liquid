@@ -31,3 +31,16 @@
     </fieldset>
   {% endif %}
 {% endform %}
+
+{% schema %}
+  {
+    "name": "cart",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "cart",
+        "label": "Add to Cart"
+      }
+    ]
+  }
+{% endschema %}

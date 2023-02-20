@@ -3,3 +3,16 @@
 <div>{{ page.content }}</div>
 
 {% form 'contact', contact %}{% endform %}
+
+{% schema %}
+  {
+    "name": "contact",
+    "settings": [
+      {
+        "type": "text",
+        "id": "contact",
+        "label": "Contact"
+      }
+    ]
+  }
+{% endschema %}

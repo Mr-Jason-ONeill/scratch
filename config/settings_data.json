@@ -1,0 +1,28 @@
+[
+    {
+      "name": "Colors",
+      "settings": {
+        {
+            "type": "color",
+            "id": "bg",
+            "label": "Background Color"
+        },
+        {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text Color"
+        }
+      }
+    },
+    {
+        "name": "Setting",
+        "settings": {
+          {
+              "type": "checkbox",
+              "id": "show_search",
+              "label": "Show"
+          }
+        }
+      }
+  ]
+  

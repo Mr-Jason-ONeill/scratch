@@ -1,0 +1,33 @@
+{% form 'cart', cart %}
+  <fieldset>
+    <legend>Cart</legend>
+
+    <!-- Add if statement for if Cart is empty -->
+    {% if cart.empty? %}
+
+      <p>Oh, your cart is empty. =(
+      </p>
+
+    {% else %}
+
+      {% for item in cart.items %}
+        <div>
+          <h3>{{ item.title }}</h3>
+          <img src="{{ item.image | image_url: width: 200 }}" alt="">
+          <p>{{ item.final_line_price | money_without_trailing_zeros }}</p>
+          <input type="updates[]" value="{{items.quantity}}">
+          <a href="{{item.url_to_remove}}">Remove</a>
+        </div>
+
+      {% endfor %}
+
+      <hr>
+
+      <h4>Total = {{ cart.total_price | money_without_currency }}</h4>
+
+      <button type="submit" name="update">Update</button>
+      <button type="submit" name="checkout">Checkout</button>
+
+    </fieldset>
+  {% endif %}
+{% endform %}

@@ -1,3 +1,11 @@
 <header>
-  <h1>This is the header snippet</h1>
+  {{ shop.name }}
+
+  <!-- For Navigation Links -->
+  <ul>
+    {% for link in linklists.main-menu.links -%}
+      <li>{{ link.title | link_to: link.url }}</li>
+    {%- endfor %}
+  </ul>
+
 </header>

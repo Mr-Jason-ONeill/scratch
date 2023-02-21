@@ -1,3 +1,9 @@
 body {
     background-color: aqua;
 }
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+}

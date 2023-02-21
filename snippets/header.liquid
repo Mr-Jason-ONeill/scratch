@@ -1,11 +1,9 @@
 <header>
-  {{ shop.name }}
+  {{ shop.name | upcase }}
 
-  <!-- For Navigation Links -->
-  <ul>
-    {% for link in linklists.main-menu.links -%}
-      <li>{{ link.title | link_to: link.url }}</li>
-    {%- endfor %}
-  </ul>
-
-</header>
+<!-- For Navigation Links -->
+  <!--  <ul>
+  {% for link in linklists.main-menu.links -%}
+  <li>{{ link.title | link_to: link.url }}</li>
+  {%- endfor %}
+  </ul> --></header>

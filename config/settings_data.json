@@ -1,22 +1,13 @@
-[
+  
+  [
     {
-      "name": "Colors",
-      "settings": {
-            "type": "color",
-            "id": "bg",
-            "label": "Background Color"
-        }, {
-            "type": "color",
-            "id": "text_color",
-            "label": "Text Color"
-        }
-      }, {
-        "name": "Setting",
-        "settings": {
-              "type": "checkbox",
-              "id": "show_search",
-              "label": "Show"
-          }
-        }
+      "name": "Scratch",
+      "theme_name": "Scratch",
+      "theme_author": "Jason",
+      "theme_version": "1.0.0",
+      "theme_documentation_url": "https://trystartingfromscratch.myshopify.com/",
+      "theme_support_url": "https:\/\/support.shopify.com\/",
+      "theme_support_email": "jason.a.oneill@gmail.com"
+    }
   ]
   

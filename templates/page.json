@@ -2,9 +2,17 @@
   "sections": {
       "main": {
           "type": "page"
+      },
+      "blog": {
+        "type": "blog"
+      },
+      "collection": {
+        "type": "collection"
       }
   },
   "order": [
-      "main"
+      "main",
+      "blog",
+      "collection"
   ]
 }

@@ -2,10 +2,51 @@
     {
       "name": "theme_info",
       "theme_name": "Scratch",
-      "theme_author": "Jason",
+      "theme_author": "Scratch",
       "theme_version": "1.0.0",
       "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn",
-      "theme_support_url": "https:\/\/support.shopify.com\/",
-    }
-  ]
-  
+      "theme_support_url": "https:\/\/support.shopify.com\/"
+    }, {
+    "name": "Theme Settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "General Settings"
+      },
+      {
+        "type": "text",
+        "id": "Scratch",
+        "label": "Company",
+        "default": "Scratch"
+      },
+      {
+        "type": "textarea",
+        "id": "store_description",
+        "label": "Store Description",
+        "default": "Welcome to the begginning"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_featured_products",
+        "label": "Enable Featured Products",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Color Settings"
+      },
+      {
+        "type": "color",
+        "id": "primary_color",
+        "label": "Primary Color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "secondary_color",
+        "label": "Secondary Color",
+        "default": "#FFFFFF"
+      }
+    ]
+  }
+]

@@ -2,7 +2,7 @@ body {
     background-color: coral;
 }
 
-a {
+li, a {
     text-decoration: none;
     display: inline-block;
     list-style: none;

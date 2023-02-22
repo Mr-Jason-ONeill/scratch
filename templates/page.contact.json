@@ -4,15 +4,9 @@
       "type": "page_contact",
       "settings": {
       }
-    },
-    "collections": {
-      "type": "collections",
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "collections"
+    "main"
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+      }
+    },
+    "blog": {
+      "type": "blog",
+      "settings": {
+      }
+    },
+    "collections": {
+      "type": "collections",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "blog",
+    "collections"
+  ]
+}

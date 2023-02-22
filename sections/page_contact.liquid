@@ -1,8 +1,4 @@
-<h1>{{ page.title }}</h1>
-
-<div>{{ page.content }}</div>
-
-{% form 'contact', contact %}{% endform %}
+<div>{% render 'contact' %}</div>
 
 {% schema %}
   {

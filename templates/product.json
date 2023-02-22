@@ -3,13 +3,11 @@
     "items": {
       "type": "product",
       "settings": {
-        "products": ""
       }
     },
     "collections": {
       "type": "product",
       "settings": {
-        "products": ""
       }
     }
   },

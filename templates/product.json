@@ -4,9 +4,15 @@
       "type": "product",
       "settings": {
       }
+    },
+    "collections": {
+      "type": "product",
+      "settings": {
+      }
     }
   },
   "order": [
-    "items"
+    "items",
+    "collections"
   ]
 }

@@ -4,7 +4,6 @@
   <!-- product.description displays the same thing -->
   {{ product.content }}
 </div>
-{%  render 'product-item' %}
 
 {% form 'product', product %}
   <select name="id">
@@ -19,12 +18,12 @@
 
 {% schema %}
   {
-    "name": "product",
+    "name": "products",
     "settings": [
       {
         "type": "product",
-        "id": "product",
-        "label": "Product"
+        "id": "products",
+        "label": "Products"
       }
     ]
   }

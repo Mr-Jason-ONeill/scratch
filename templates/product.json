@@ -6,13 +6,13 @@
       }
     },
     "collections": {
-      "type": "product",
+      "type": "collection",
       "settings": {
       }
     }
   },
   "order": [
-    "items",
-    "collections"
+    "collections",
+    "items"
   ]
 }

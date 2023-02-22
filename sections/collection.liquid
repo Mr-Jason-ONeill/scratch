@@ -1,7 +1,7 @@
-{% paginate collection.products by 5 %}
+
 
   <h1>{{ collection.title }}</h1>
-
+{% paginate collection.products by 5 %}
   <select id="sort-by">
   {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
 

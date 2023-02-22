@@ -4,6 +4,7 @@
   <!-- product.description displays the same thing -->
   {{ product.content }}
 </div>
+{%  render 'product-item' %}
 
 {% form 'product', product %}
   <select name="id">

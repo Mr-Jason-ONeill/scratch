@@ -4,9 +4,15 @@
       "type": "main",
       "settings": {
       }
+    },
+    "product": {
+      "type": "product",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "product"
   ]
 }

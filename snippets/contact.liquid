@@ -1,0 +1,34 @@
+<h1>{{ page.title | upcase }}</h1>
+
+<div>{{ page.content | upcase }}</div>
+
+{% form 'contact', contact %}
+  <fieldset>
+    <legend>Enter the Details</legend>
+    <form method="post" action="/contact">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="contact[name]" value="{{ form['name'] }}">
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value="{{ form['email'] }}">
+      </div>
+
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" value="{{ form['phone'] }}">
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="body">{{ form['body'] }}</textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Send">
+      </div>
+    </form>
+  </fieldset>
+{% endform %}

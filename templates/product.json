@@ -3,13 +3,13 @@
     "items": {
       "type": "product",
       "settings": {
-        "products": "classic-leather-jacket"
+        "products": ""
       }
     },
     "collections": {
       "type": "product",
       "settings": {
-        "products": "dark-denim-top"
+        "products": ""
       }
     }
   },

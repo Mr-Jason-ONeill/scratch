@@ -5,7 +5,7 @@
       "settings": {
       }
     },
-    "home_product": {
+    "product_home": {
       "type": "product",
       "settings": {
       }
@@ -13,6 +13,6 @@
   },
   "order": [
     "main",
-    "home_product"
+    "product_home"
   ]
 }

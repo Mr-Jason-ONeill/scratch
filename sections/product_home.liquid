@@ -9,7 +9,7 @@
   {% render 'product-item', product: product %}
 {% endfor %}
 
-{% form 'product', product: '' %}
+{% form 'product', product: 'Classic Varsity Top' %}
   <select name="id">
     {% for variant in product.variants %}
       <option value="{{ variant.id }}">

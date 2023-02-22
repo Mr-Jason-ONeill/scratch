@@ -3,13 +3,11 @@
     "main": {
       "type": "main",
       "settings": {
-        "main_page": ""
       }
     },
     "product": {
       "type": "product",
       "settings": {
-        "products": "dark-denim-top"
       }
     }
   },

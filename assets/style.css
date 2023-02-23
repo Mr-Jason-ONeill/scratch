@@ -14,6 +14,7 @@ a {
   background-color: beige;
 }
 .collectionn-option {
+  display: flex;
   justify-content: center;
   align-content: center;
 }

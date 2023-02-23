@@ -1,12 +1,11 @@
 <div class="collection-bg">
   <h1>{{ collection.title }}</h1>
   {% paginate collection.products by 5 %}
-    <select id="sort-by">
+    <select id="sort-by" class="collection-options">
       {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
 
       {% for option in collection.sort_options %}
         <option
-          class="collection-options"
           value="{{ option.value }}"
           {% if option.value == sort_by %}
             selected="selected"

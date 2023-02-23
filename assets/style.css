@@ -10,7 +10,10 @@ a {
   padding: 10px;
 }
 
+.home-page {
+  background-color: blue;
+}
+
 .collection-bg {
   background-color: beige;
 }
-

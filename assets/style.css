@@ -16,6 +16,12 @@ a {
   flex-direction: column;
 }
 
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .collection-bg,
 .contact-area {
   background-color: beige;

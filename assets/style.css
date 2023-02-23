@@ -13,3 +13,7 @@ a {
 .collection-bg {
   background-color: beige;
 }
+.collectionn-option {
+  justify-content: center;
+  align-content: center;
+}

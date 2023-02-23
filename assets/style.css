@@ -1,11 +1,15 @@
 body {
-    background-color: coral;
+  background-color: coral;
 }
 
-li, a {
-    text-decoration: none;
-    display: inline-block;
-    list-style: none;
-    padding: 10px;
-  
+li,
+a {
+  text-decoration: none;
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+}
+
+.collection-bg {
+  background-color: beige;
 }

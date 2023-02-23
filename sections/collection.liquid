@@ -6,6 +6,7 @@
 
       {% for option in collection.sort_options %}
         <option
+          class="collection-options"
           value="{{ option.value }}"
           {% if option.value == sort_by %}
             selected="selected"

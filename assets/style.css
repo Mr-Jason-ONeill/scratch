@@ -12,8 +12,5 @@ a {
 
 .collection-bg {
   background-color: beige;
-}
-.collection-options {
-  justify-content: center;
-  align-items: right;
+  border: dotted 1px solid;
 }

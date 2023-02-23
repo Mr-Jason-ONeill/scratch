@@ -1,6 +1,5 @@
-<footer>
-  <h1>{{ page.title | upcase }}</h1>
-
+<h1>{{ page.title | upcase }}</h1>
+<div class="contact area">
   <div>{{ page.content | upcase }}</div>
 
   {% form 'contact', contact %}
@@ -33,4 +32,4 @@
       </form>
     </fieldset>
   {% endform %}
-</footer>
+</div>

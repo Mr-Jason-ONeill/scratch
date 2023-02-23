@@ -2,6 +2,9 @@ body {
   background-color: coral;
 }
 
+header {
+  background-color: beige;
+}
 li,
 a {
   text-decoration: none;
@@ -15,4 +18,3 @@ a {
 .contact-area {
   background-color: beige;
 }
-

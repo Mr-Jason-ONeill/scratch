@@ -13,4 +13,6 @@ a {
 .collection-bg {
   background-color: beige;
   background-size: 100%;
+  justify-content: center;
+  align-items: center;
 }

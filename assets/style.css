@@ -13,8 +13,7 @@ a {
 .collection-bg {
   background-color: beige;
 }
-.collectionn-option {
-  display: flex;
+#sort-by {
   justify-content: center;
-  align-content: center;
+  align-items: right;
 }

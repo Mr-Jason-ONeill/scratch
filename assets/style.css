@@ -10,10 +10,7 @@ a {
   padding: 10px;
 }
 
+.collection-bg,
 .home-page {
-  background-color: beige;
-}
-
-.collection-bg {
   background-color: beige;
 }

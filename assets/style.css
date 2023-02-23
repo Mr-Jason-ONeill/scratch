@@ -11,6 +11,7 @@ a {
 }
 
 .collection-bg,
-.home-page {
+.home-page,
+.contact-area {
   background-color: beige;
 }

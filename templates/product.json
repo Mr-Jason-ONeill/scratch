@@ -1,18 +1,12 @@
 {
   "sections": {
-    "items": {
-      "type": "product",
-      "settings": {
-      }
-    },
-    "collections": {
-      "type": "collection",
+    "main": {
+      "type": "main-product",
       "settings": {
       }
     }
   },
   "order": [
-    "collections",
-    "items"
+    "main"
   ]
 }

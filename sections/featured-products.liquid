@@ -1,0 +1,38 @@
+{% for product in section.settings.products %}
+  <h2>{{ product.title }}</h2>
+  <p>{{ product.price | money_with_currency }}</p>
+  <div>
+    {% comment %} product.description displays the same thing --> {% endcomment %}
+    {{ product.content }}
+  </div>
+
+  {% render 'product-item', product: product %}
+
+  {% form 'product', product %}
+    <select name="id">
+      {% for variant in product.variants %}
+        <option value="{{ variant.id }}">
+          {{ variant.title }}
+        </option>
+      {% endfor %}
+    </select>
+  
+    <button type="submit">Add to Cart</button>
+  {% endform %}
+{% endfor %}
+
+
+
+{% schema %}
+{
+  "name": "Home Products",
+  "settings": [
+    {
+      "type": "product_list",
+      "id": "products",
+      "label": "Homepage Products"
+    }
+  ]
+}
+{% endschema %}
+

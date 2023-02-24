@@ -1,13 +1,11 @@
 
 <h2>{{ product.title }}</h2>
 <p>{{ product.price | money_with_currency }}</p>
+
 <div>
   {% comment %} product.description displays the same thing --> {% endcomment %}
   {{ product.content }}
 </div>
-{% for product in collections.frontpage.products %}
-  {% render 'product-item', product: product %}
-{% endfor %}
 
 {% form 'product', product %}
   <select name="id">
@@ -24,13 +22,7 @@
 {% schema %}
 {
   "name": "products",
-  "settings": [
-    {
-      "type": "product",
-      "id": "products",
-      "label": "Products"
-    }
-  ]
+  "settings": []
 }
 {% endschema %}
 

@@ -1,18 +1,12 @@
 {
   "sections": {
-    "main": {
-      "type": "main",
-      "settings": {
-      }
-    },
-    "product_home": {
-      "type": "product",
+    "featured-products": {
+      "type": "featured-products",
       "settings": {
       }
     }
   },
   "order": [
-    "main",
-    "product_home"
+    "featured-products"
   ]
 }

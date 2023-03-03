@@ -1,5 +1,6 @@
 <div>
   {{ section.settings.alternate_header }}
+<<<<<<< HEAD
 </div>
 
 {% schema %}
@@ -14,3 +15,20 @@
     ]
   }
 {% endschema %}
+=======
+  {{ page.content }}
+</div>
+
+{% schema %}
+{
+  "name": "Page",
+  "settings": [
+    {
+      "type": "text",
+      "id": "alternate_header",
+      "label": "Alternate Header"
+    }
+  ]
+}
+{% endschema %}
+>>>>>>> f7eaa5e1be517f733eeb9da2098d02fe35fa20a2

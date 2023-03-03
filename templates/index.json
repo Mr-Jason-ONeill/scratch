@@ -4,6 +4,7 @@
       "type": "featured-products",
       "settings": {
       }
+<<<<<<< HEAD
     },
     "third": {
       "type": "masonry",
@@ -16,3 +17,11 @@
     "third"
   ]
 }
+=======
+    }
+  },
+  "order": [
+    "featured-products"
+  ]
+}
+>>>>>>> f7eaa5e1be517f733eeb9da2098d02fe35fa20a2

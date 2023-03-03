@@ -4,6 +4,7 @@
       "type": "main-page",
       "settings": {
       }
+<<<<<<< HEAD
     },
     "second": {
       "type": "images",
@@ -20,5 +21,11 @@
     "main",
     "second",
     "third"
+=======
+    }
+  },
+  "order": [
+    "main"
+>>>>>>> f7eaa5e1be517f733eeb9da2098d02fe35fa20a2
   ]
 }

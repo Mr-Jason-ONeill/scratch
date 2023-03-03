@@ -1,13 +1,9 @@
-  
-  [
-    {
-      "name": "Scratch",
-      "theme_name": "Scratch",
-      "theme_author": "Jason",
-      "theme_version": "1.0.0",
-      "theme_documentation_url": "https://trystartingfromscratch.myshopify.com/",
-      "theme_support_url": "https:\/\/support.shopify.com\/",
-      "theme_support_email": "jason.a.oneill@gmail.com"
-    }
-  ]
-  
+{
+  "current": {
+    "Scratch": "TrystartingfromScratch",
+    "primary_color": "#000000",
+    "content_for_index": [
+
+    ]
+  }
+}

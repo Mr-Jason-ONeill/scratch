@@ -1,10 +1,50 @@
 body {
-    background-color: coral;
+  background-color: coral;
 }
 
-li, a {
-    text-decoration: none;
-    display: inline-block;
-    list-style: none;
-    padding: 10px;
+header {
+  background-color: beige;
+}
+
+.company-name {
+  display: flex;
+  justify-content: center;
+}
+
+li,
+a {
+  text-decoration: none;
+  display: inline-flex;
+  list-style: none;
+  padding: 10px;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: column;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection-bg,
+.contact-area {
+  background-color: beige;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 10px; */
+}
+
+.grid-item {
+  background-color: beige;
+  padding: 20px;
+  text-align: center;
+}
+
+.favicon-area {
+  background-color: brown;
 }

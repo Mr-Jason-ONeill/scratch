@@ -1,0 +1,31 @@
+<div class="favicon-area">{{ section.settings.icon-text }}</div>
+<div class="grid-container">
+  <div class="grid-item">
+    <i class="fa-solid fa-prescription-bottle-medical"></i>
+  </div>
+  <div class="grid-item">
+    <i class="fa-thin fa-face-awesome"></i>
+  </div>
+  <div class="grid-item">
+    <i class="fa-thin fa-bolt"></i>
+  </div>
+  <div class="grid-item">
+    <i class="fa-regular fa-skeleton-ribs"></i>
+  </div>
+  <div class="grid-item">
+    <i class="fa-light fa-shield"></i>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "icons",
+    "settings": [
+      {
+        "type": "text",
+        "id": "icon-text",
+        "label": "Icon Texts"
+      }
+    ]
+  }
+{% endschema %}

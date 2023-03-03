@@ -1,10 +1,18 @@
 {
-    "sections": {
-        "main": {
-            "type": "main"
-        }
+  "sections": {
+    "featured-products": {
+      "type": "featured-products",
+      "settings": {
+      }
     },
-    "order": [
-        "main"
-    ]
+    "third": {
+      "type": "masonry",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "featured-products",
+    "third"
+  ]
 }

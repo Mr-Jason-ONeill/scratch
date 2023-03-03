@@ -1,7 +1,8 @@
 <h2>{{ product.title }}</h2>
 <p>{{ product.price | money_with_currency }}</p>
+
 <div>
-  <!-- product.description displays the same thing -->
+  {% comment %} product.description displays the same thing --> {% endcomment %}
   {{ product.content }}
 </div>
 
@@ -9,7 +10,8 @@
   <select name="id">
     {% for variant in product.variants %}
       <option value="{{ variant.id }}">
-        {{ variant.title }}</option>
+        {{ variant.title }}
+      </option>
     {% endfor %}
   </select>
 
@@ -18,13 +20,7 @@
 
 {% schema %}
   {
-    "name": "product",
-    "settings": [
-      {
-        "type": "product",
-        "id": "product",
-        "label": "Product"
-      }
-    ]
+    "name": "products",
+    "settings": []
   }
 {% endschema %}

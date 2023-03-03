@@ -1,18 +1,24 @@
 {
   "sections": {
-      "main": {
-          "type": "page"
-      },
-      "blog": {
-        "type": "blog"
-      },
-      "collection": {
-        "type": "collection"
+    "main": {
+      "type": "main-page",
+      "settings": {
       }
+    },
+    "second": {
+      "type": "images",
+      "settings": {
+      }
+    },
+    "third": {
+      "type": "icons",
+      "settings": {
+      }
+    }
   },
   "order": [
-      "main",
-      "blog",
-      "collection"
+    "main",
+    "second",
+    "third"
   ]
 }

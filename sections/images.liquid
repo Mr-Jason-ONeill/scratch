@@ -1,0 +1,37 @@
+<div class="favicon-area">Second</div>
+<div class="grid-container">
+  {% for block in section.blocks %}
+    <div class="grid-item">
+      <img src="{{ block.settings.image | image_url: width: 500 }}" alt="Images">
+    </div>
+    <div class="grid-item">
+      {{ block.settings.text }}
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "name": "image",
+    "blocks": [
+      {
+        "name": "image",
+        "type": "image_picker",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Description",
+            "placeholder": "Write something here"
+          }
+        ]
+
+      }
+    ]
+
+  }
+{% endschema %}

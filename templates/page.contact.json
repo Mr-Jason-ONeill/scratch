@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "page_contact",
+      "type": "main-page",
       "settings": {
       }
     }
@@ -9,8 +9,4 @@
   "order": [
     "main"
   ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f7eaa5e1be517f733eeb9da2098d02fe35fa20a2

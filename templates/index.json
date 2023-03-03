@@ -3,25 +3,15 @@
     "featured-products": {
       "type": "featured-products",
       "settings": {
+        "products": [
+          "black-leather-bag",
+          "blue-silk-tuxedo",
+          "chequered-red-shirt"
+        ]
       }
-<<<<<<< HEAD
-    },
-    "third": {
-      "type": "masonry",
-      "settings": {
-      }
-    }
-  },
-  "order": [
-    "featured-products",
-    "third"
-  ]
-}
-=======
     }
   },
   "order": [
     "featured-products"
   ]
 }
->>>>>>> f7eaa5e1be517f733eeb9da2098d02fe35fa20a2

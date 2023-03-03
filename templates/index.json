@@ -1,5 +1,12 @@
 {
   "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "header": "",
+        "background_image": "shopify:\/\/shop_images\/woman-infront-of-tree-with-berries.jpeg"
+      }
+    },
     "featured-products": {
       "type": "featured-products",
       "settings": {
@@ -12,6 +19,7 @@
     }
   },
   "order": [
+    "hero",
     "featured-products"
   ]
 }

@@ -1,6 +1,6 @@
 <div>
   <a href=" {{ product.url }}">
-    <img src="{{ product.featured_image | image_url: width: 300 }}" alt="Featured Product">
+    {{ product | image_url: width: 600 | image_tag: loading: "lazy" }}
     <h3>{{ product.title | upcase }}</h3>
     <p>
       {{ product.price | money_with_currency }}

@@ -2,7 +2,7 @@
   <h1 class="company-name">{{ shop.name | upcase }}</h1>
 
   <!-- For Navigation Links -->
-  <ul>
+  <ul class="mb-0">
     {% for link in linklists.main-menu.links -%}
       <li>{{ link.title | link_to: link.url }}</li>
     {%- endfor %}

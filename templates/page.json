@@ -3,16 +3,29 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "alternate_header": ""
       }
     },
     "second": {
       "type": "images",
+      "blocks": {
+        "9e0c928b-efa0-4376-9eeb-8a6ce50573fe": {
+          "type": "image_picker",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "9e0c928b-efa0-4376-9eeb-8a6ce50573fe"
+      ],
       "settings": {
       }
     },
     "third": {
       "type": "icons",
       "settings": {
+        "icon-text": "We can write something here"
       }
     }
   },

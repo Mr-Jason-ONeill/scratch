@@ -1,10 +1,9 @@
-<div class="favicon-area">Second</div>
 <div class="grid-container">
   {% for block in section.blocks %}
     <div class="grid-item">
       <img src="{{ block.settings.image | image_url: width: 500 }}" alt="Images">
     </div>
-    <div class="grid-item">
+    <div class="grid-item text-area">
       {{ block.settings.text }}
     </div>
   {% endfor %}

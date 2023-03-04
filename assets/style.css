@@ -45,9 +45,12 @@ a {
   text-align: center;
 }
 
-.favicon-area {
+.icon-container {
   background-color: brown;
+  justify-content:space-between center;
+  align-items: center;
 }
+
 
 .hero {
   height: 90vh;

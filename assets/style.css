@@ -45,10 +45,15 @@ a {
   text-align: center;
 }
 
-.icon-container {
-  background-color: brown;
-  justify-content:space-between center;
-  align-items: center;
+.icon-container,
+.icon-message,
+.alt-message {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-message {
+  justify-content: center;
 }
 
 

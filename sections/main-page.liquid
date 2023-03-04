@@ -1,17 +1,17 @@
-<div>
+<div class="alt-message">
   {{ section.settings.alternate_header }}
   {{ page.content }}
 </div>
 
 {% schema %}
-{
-  "name": "Page",
-  "settings": [
-    {
-      "type": "text",
-      "id": "alternate_header",
-      "label": "Alternate Header"
-    }
-  ]
-}
+  {
+    "name": "Page",
+    "settings": [
+      {
+        "type": "text",
+        "id": "alternate_header",
+        "label": "Alternate Header"
+      }
+    ]
+  }
 {% endschema %}

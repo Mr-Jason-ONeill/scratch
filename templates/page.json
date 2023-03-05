@@ -26,7 +26,7 @@
     "third": {
       "type": "icons",
       "settings": {
-        "icon-text": "We can write something here and the icons will be underneath"
+        "icon-text": "We can write something here and the icons will be above"
       }
     },
     "fourth": {

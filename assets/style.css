@@ -52,6 +52,11 @@ a {
   justify-content: space-evenly;
 }
 
+.icon-item:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .icon-message {
   justify-content: center;
 }

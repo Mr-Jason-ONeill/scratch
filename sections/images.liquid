@@ -3,15 +3,26 @@
     <div class="grid-item">
       <img src="{{ block.settings.image | image_url: width: 500 }}" alt="Images">
     </div>
-    <div class="grid-item text-area">
+    <div class="grid-item">
       {{ block.settings.text }}
     </div>
   {% endfor %}
 </div>
 
+{% if section.settings.checkbox == true %}
+  <!-- When checked image will display in right column -->
+{% endif %}
+
 {% schema %}
   {
     "name": "image",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "checkbox",
+        "label": "Image on Right side?"
+      }
+    ],
     "blocks": [
       {
         "name": "image",
@@ -28,9 +39,7 @@
             "placeholder": "Write something here"
           }
         ]
-
       }
     ]
-
   }
 {% endschema %}

@@ -28,11 +28,29 @@
       "settings": {
         "icon-text": "We can write something here and the icons will be underneath"
       }
+    },
+    "fourth": {
+      "type": "images",
+      "blocks": {
+        "9e0c928b-efa0-4376-9eeb-8a6ce50573fe": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a-hand-removes-a-sweater-from-a-clothing-rack.jpg",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "9e0c928b-efa0-4376-9eeb-8a6ce50573fe"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "second",
-    "third"
+    "third",
+    "fourth"
   ]
 }

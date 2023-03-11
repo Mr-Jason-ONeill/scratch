@@ -1,16 +1,27 @@
-<div class="grid-container">
-  {% for block in section.blocks %}
-    <div class="grid-item">
-      <img src="{{ block.settings.image | image_url: width: 500 }}" alt="Images">
-    </div>
-    <div class="grid-item">
-      {{ block.settings.text }}
-    </div>
-  {% endfor %}
-</div>
-
-{% if section.settings.checkbox == true %}
+{% if section.settings.checkbox == false %}
   <!-- When checked image will display in right column -->
+  <div class="grid-container">
+    {% for block in section.blocks %}
+      <div class="grid-item">
+        <img src="{{ block.settings.image | image_url: width: 500 }}" alt="Images">
+      </div>
+      <div class="grid-item">
+        {{ block.settings.text }}
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="grid-container">
+    {% for block in section.blocks %}
+      <div class="grid-item">
+        {{ block.settings.text }}
+      </div>
+      <div class="grid-item">
+        <img src="{{ block.settings.image | image_url: width: 500 }}" alt="Images">
+      </div>
+    {% endfor %}
+  </div>
+
 {% endif %}
 
 {% schema %}
@@ -24,6 +35,8 @@
       }
     ],
     "blocks": [
+
+
       {
         "name": "image",
         "type": "image_picker",

@@ -40,9 +40,8 @@ a {
 }
 
 .grid-item {
-  background-color: beige;
-  padding: 20px;
   text-align: center;
+  width:auto
 }
 
 .icon-container,

@@ -45,12 +45,18 @@
       ],
       "settings": {
       }
+    },
+    "fifth": {
+      "type": "cards",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "second",
     "third",
-    "fourth"
+    "fourth",
+    "fifth"
   ]
 }

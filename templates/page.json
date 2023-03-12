@@ -13,14 +13,14 @@
           "type": "image_picker",
           "settings": {
             "image": "shopify:\/\/shop_images\/a-hand-removes-a-sweater-from-a-clothing-rack.jpg",
-            "text": ""
+            "text": "Photo"
           }
         },
         "eb0cf5d7-c13f-4540-a6b8-04cd48e33270": {
           "type": "image_picker",
           "settings": {
             "image": "shopify:\/\/shop_images\/iphone-detects-qr-code.jpg",
-            "text": "Phone"
+            "text": "Descriptions"
           }
         }
       },

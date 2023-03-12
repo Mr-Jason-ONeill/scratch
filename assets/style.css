@@ -41,7 +41,7 @@ a {
 
 .grid-item {
   text-align: center;
-  width:auto
+  width: 100%;
 }
 
 .icon-container,

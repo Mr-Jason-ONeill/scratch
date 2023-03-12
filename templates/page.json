@@ -15,12 +15,21 @@
             "image": "shopify:\/\/shop_images\/a-hand-removes-a-sweater-from-a-clothing-rack.jpg",
             "text": ""
           }
+        },
+        "eb0cf5d7-c13f-4540-a6b8-04cd48e33270": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/iphone-detects-qr-code.jpg",
+            "text": "Phone"
+          }
         }
       },
       "block_order": [
-        "9e0c928b-efa0-4376-9eeb-8a6ce50573fe"
+        "9e0c928b-efa0-4376-9eeb-8a6ce50573fe",
+        "eb0cf5d7-c13f-4540-a6b8-04cd48e33270"
       ],
       "settings": {
+        "checkbox": false
       }
     },
     "third": {
@@ -44,6 +53,7 @@
         "9e0c928b-efa0-4376-9eeb-8a6ce50573fe"
       ],
       "settings": {
+        "checkbox": false
       }
     },
     "fifth": {

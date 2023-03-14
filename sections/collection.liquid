@@ -1,7 +1,7 @@
-<div class="collection-bg">
-  <h1>{{ collection.title }}</h1>
+<div class="container">
+  <h1 class="text-center">{{ collection.title }}</h1>
   {% paginate collection.products by 5 %}
-    <select id="sort-by" class="collection-options">
+    <select id="sort-by" class="collection-options text-center">
       {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
 
       {% for option in collection.sort_options %}
@@ -15,41 +15,16 @@
         </option>
       {% endfor %}
     </select>
-
-    {% for product in collection.products %}
-      {% render 'product-item', product: product %}
-    {% endfor %}
+    
+    <div class="collection-grid">
+      {% for product in collection.products %}
+        {% render 'product-item', product: product %}
+      {% endfor %}
+    </div>
 
     {{ paginate | default_pagination }}
   {% endpaginate %}
 </div>
-<!--
-  This is the Js needed to control what the dropdown list can do
-  <script>
-    Shopify.queryParams = {};
-
-    // Preserve existing query parameters
-    if (location.search.length) {
-      var params = location.search.substr(1).split('&');
-
-      for (var i = 0; i < params.length; i++) {
-        var keyValue = params[i].split('=');
-
-        if (keyValue.length) {
-          Shopify.queryParams[decodeURIComponent(keyValue[0])] = decodeURIComponent(keyValue[1]);
-        }
-      }
-    }
-
-    // Update sort_by query parameter on select change
-    document.querySelector('#sort-by').addEventListener('change', function(e) {
-      var value = e.target.value;
-
-      Shopify.queryParams.sort_by = value;
-      location.search = new URLSearchParams(Shopify.queryParams).toString();
-    });
-  </script>
--->
 
 {% schema %}
 {

@@ -1,10 +1,25 @@
-<div>
+<div class="product-item">
   <a href=" {{ product.url }}">
-    {{ product | image_url: width: 600 | image_tag: loading: "lazy" }}
-    <h3>{{ product.title | upcase }}</h3>
-    <p>
+    <div class="image-swap rounded overflow-hidden position-relative">
+      {{ product | image_url: width: 600 | image_tag: loading: "lazy", class: "primary-image" }}
+
+      {% if product.images.size > 1 %}
+        {{ product.images[1] 
+          | image_url: width: 600 
+          | image_tag: loading: "lazy", class: "image-on-hover" 
+        }}  
+      {% endif %}
+    </div>
+
+    <h3 class="pt-3">{{ product.title | upcase }}</h3>
+    <p class="mb-0">
       {{ product.price | money_with_currency }}
     </p>
   </a>
+
+  <a href="{{ product.url }}">
+    <button type="button" class="btn btn-dark text-uppercase">
+      Shop Now
+    </button>
+  </a>
 </div>
-{{- product.title | link_to: product.url }}

@@ -27,27 +27,32 @@
         "default": "Welcome to the begginning"
       },
       {
-        "type": "checkbox",
-        "id": "enable_featured_products",
-        "label": "Enable Featured Products",
-        "default": true
-      },
-      {
         "type": "header",
         "content": "Color Settings"
-      },
+      }
+    ]
+  },
+  {
+    "name": "Background Color",
+    "settings": [
       {
         "type": "color",
-        "id": "primary_color",
-        "label": "Primary Color",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "secondary_color",
-        "label": "Secondary Color",
+        "id": "color_page_bg",
+        "label": "Page background",
         "default": "#FFFFFF"
       }
     ]
+  },
+  {
+    "name": "Font Color",
+    "settings": [
+      {
+        "type": "color",
+        "id": "font_color",
+        "label": "Font Color",
+        "default": "#000"
+      }
+    ]
   }
+  
 ]

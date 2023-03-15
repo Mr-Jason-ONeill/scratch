@@ -96,3 +96,8 @@ a {
 .product-item .image-swap:hover .image-on-hover {
   opacity: 1;
 }
+
+.card {
+  justify-content: center;
+  align-items: center;
+}

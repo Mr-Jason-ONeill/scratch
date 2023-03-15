@@ -1,29 +1,20 @@
-<div class="card-group">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Product 1</h5>
-      <p class="card-text">This is where the text would go.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 9 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Product 2</h5>
-      <p class="card-text">This is where the text would go.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 44 mins ago</small>
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Option 1</h5>
+        <p class="card-text">What an amazing offer</p>
+        <a href="{{ product.url }}" class="btn btn-primary">Go somewhere fancy</a>
+      </div>
     </div>
   </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Product 3</h5>
-      <p class="card-text">This is a where the text would go.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 59 mins ago</small>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Option 2</h5>
+        <p class="card-text">Not a good offer, just looks nice.</p>
+        <a href="{{ product.url }}" class="btn btn-primary">Go to the same place</a>
+      </div>
     </div>
   </div>
 </div>

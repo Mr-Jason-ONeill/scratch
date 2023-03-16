@@ -1,10 +1,17 @@
 <header>
   <h1 class="company-name">{{ shop.name | upcase }}</h1>
+  <span>{{ section.settings.cart }}</span>
 
   <!-- For Navigation Links -->
   <ul class="mb-0">
     {% for link in linklists.main-menu.links -%}
       <li>{{ link.title | link_to: link.url }}</li>
     {%- endfor %}
+    <li>
+      <a href="/cart">
+        <i class="bi bi-cart4"></i>
+      </a>
+    </li>
   </ul>
+
 </header>

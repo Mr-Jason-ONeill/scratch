@@ -2,18 +2,18 @@
   <fieldset>
     <legend>Cart</legend>
 
-    <!-- Add if statement for if Cart is empty -->
+
+    <!-- if statement for if Cart is empty -->
     {% if cart.empty? %}
 
-      <p>Oh, your cart is empty. =/
-      </p>
+      <p>Oh, your cart is empty</p>
 
     {% else %}
 
       {% for item in cart.items %}
         <div>
           <h3>{{ item.title }}</h3>
-          <img src="{{ item.image | image_url: width: 200 }}" alt="">
+          <img src="{{ item.image | image_url: width: 200 }}" alt="{{ item.title }}">
           <p>{{ item.final_line_price | money_without_trailing_zeros }}</p>
           <input type="updates[]" value="{{items.quantity}}">
           <a href="{{item.url_to_remove}}">Remove</a>
@@ -37,7 +37,7 @@
     "name": "cart",
     "settings": [
       {
-        "type": "checkbox",
+        "type": "link_list",
         "id": "cart",
         "label": "Add to Cart"
       }

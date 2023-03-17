@@ -6,6 +6,12 @@
         "alternate_header": ""
       }
     },
+    "fifth": {
+      "type": "cards",
+      "settings": {
+        "cards": ""
+      }
+    },
     "second": {
       "type": "images",
       "blocks": {
@@ -55,19 +61,13 @@
       "settings": {
         "checkbox": true
       }
-    },
-    "fifth": {
-      "type": "cards",
-      "settings": {
-        "cards": ""
-      }
     }
   },
   "order": [
     "main",
+    "fifth",
     "second",
     "third",
-    "fourth",
-    "fifth"
+    "fourth"
   ]
 }

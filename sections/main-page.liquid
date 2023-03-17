@@ -1,6 +1,6 @@
 <div class="alt-message">
-  {{ section.settings.alternate_header }}
-  {{ page.content }}
+  {{ section.settings.alternate_header | upcase }}
+  {{ page.content | upcase }}
 </div>
 
 {% schema %}

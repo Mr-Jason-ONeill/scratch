@@ -63,6 +63,7 @@ a {
 .image-text-container .image-item,
 .image-text-container .text-item {
   width: 50%;
+  font-size: large;
 }
 
 .collection-grid {

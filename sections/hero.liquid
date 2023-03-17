@@ -6,10 +6,12 @@
 {% comment %} All visual stuff goes here {% endcomment %}
 <div class="hero bg-secondary d-flex justify-content-center align-items-center position-relative">
   {% if background_image %}
-    {{ background_image | image_url: width: 2500 | image_tag: preload: true, class: "hero__background-image" }}  
+    {{ background_image | image_url: width: 2500 | image_tag: preload: true, class: "hero__background-image" }}
   {% endif %}
   <div class="container position-relative z-10 bg-white">
-    <h1>Hero</h1>
+    <h1>
+      I Can Be Your Hero
+    </h1>
   </div>
   {{ header }}
 </div>
@@ -22,8 +24,7 @@
         "type": "text",
         "label": "Header",
         "id": "header"
-      },
-      {
+      }, {
         "type": "image_picker",
         "id": "background_image",
         "label": "Background Image"

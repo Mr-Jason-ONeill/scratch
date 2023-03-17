@@ -2,20 +2,32 @@
 <div class="contact-area">
   {% form 'contact', contact %}
     <fieldset>
-      <legend>Enter the Details</legend>
+      <legend>Enter Your Details</legend>
       <div>
         <label for="name">Name</label>
-        <input type="text" id="name" name="contact[name]" value="{{ form['name'] }}">
+        <input
+          type="text"
+          id="name"
+          name="contact[name]"
+          value="{{ form['name'] }}">
       </div>
 
       <div>
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" value="{{ form['email'] }}">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value="{{ form['email'] }}">
       </div>
 
       <div>
         <label for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone" value="{{ form['phone'] }}">
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          value="{{ form['phone'] }}">
       </div>
 
       <div>
@@ -31,14 +43,14 @@
 </div>
 
 {% schema %}
-{
-  "name": "contact",
-  "settings": [
-    {
-      "type": "page",
-      "id": "contact",
-      "label": "Contact"
-    }
-  ]
-}
+  {
+    "name": "contact",
+    "settings": [
+      {
+        "type": "page",
+        "id": "contact",
+        "label": "Contact"
+      }
+    ]
+  }
 {% endschema %}

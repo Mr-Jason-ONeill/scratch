@@ -1,0 +1,27 @@
+a:hover {
+    color: grey;
+    transition: ease-in 0.5s;
+  }
+  
+  li:hover {
+    background-color: black;
+    transition: ease-in-out 0.7s;
+  }
+
+  .icon-item:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .product-item .image-swap .image-on-hover {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .product-item .image-swap:hover .image-on-hover {
+    opacity: 1;
+  }

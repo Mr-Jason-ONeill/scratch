@@ -5,6 +5,7 @@
 
 li,
 a {
+  color: black;
   text-decoration: none;
   display: inline-flex;
   list-style: none;
@@ -23,7 +24,6 @@ a {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-gap: 10px; */
 }
 
 .grid-item {
@@ -38,15 +38,9 @@ a {
   justify-content: space-evenly;
 }
 
-.icon-item:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
 .icon-message {
   justify-content: center;
 }
-
 
 .hero {
   height: 90vh;
@@ -84,20 +78,11 @@ a {
   object-fit: cover;
 }
 
-.product-item .image-swap .image-on-hover {
-  position: absolute;
-  z-index: 10;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.product-item .image-swap:hover .image-on-hover {
-  opacity: 1;
-}
-
 .card {
   justify-content: center;
   align-items: center;
+}
+
+.empty-cart {
+  border: 1px solid grey;
 }

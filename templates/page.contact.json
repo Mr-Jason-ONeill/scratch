@@ -4,9 +4,16 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "contact": {
+      "type": "main-contact",
+      "settings": {
+
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "contact"
   ]
 }

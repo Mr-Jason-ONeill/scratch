@@ -6,7 +6,7 @@
     <!-- if statement for if Cart is empty -->
     {% if cart.empty? %}
 
-      <p>Oh, your cart is empty</p>
+      <p class="empty-cart">Oh, your cart is empty</p>
 
     {% else %}
 
@@ -37,7 +37,7 @@
     "name": "cart",
     "settings": [
       {
-        "type": "link_list",
+        "type": "page",
         "id": "cart",
         "label": "Add to Cart"
       }

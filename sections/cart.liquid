@@ -1,12 +1,21 @@
 {% form 'cart', cart %}
   <fieldset>
-    <legend>Cart</legend>
+    <legend>
+      <h2>Your Cart</h2>
+    </legend>
 
 
     <!-- if statement for if Cart is empty -->
     {% if cart.empty? %}
 
-      <p class="empty-cart">Oh, your cart is empty</p>
+      <div class="container">
+        <div class="alert alert-dark">
+          Looks like your cart is empty.
+        </div>
+        <p>
+          <a href="#" class="btn btn-dark text-uppercase">Continue Shopping</a>
+        </p>
+      </div>
 
     {% else %}
 
@@ -15,18 +24,25 @@
           <h3>{{ item.title }}</h3>
           <img src="{{ item.image | image_url: width: 200 }}" alt="{{ item.title }}">
           <p>{{ item.final_line_price | money_without_trailing_zeros }}</p>
-          <input type="updates[]" value="{{items.quantity}}">
-          <a href="{{item.url_to_remove}}">Remove</a>
+          <a href="{{item.url_to_remove}}">
+            <button class="btn btn-outline-secondary text-uppercase">Remove</button>
+          </a>
         </div>
 
       {% endfor %}
 
       <hr>
 
-      <h4>Total = {{ cart.total_price | money_without_currency }}</h4>
+      <h4>Total = {{ cart.total_price | money_with_currency }}</h4>
 
-      <button type="submit" name="update">Update</button>
-      <button type="submit" name="checkout">Checkout</button>
+      <button
+        type="submit"
+        name="update"
+        class="btn btn-outline-secondary text-uppercase">Update</button>
+      <button
+        type="submit"
+        name="checkout"
+        class="btn btn-dark text-uppercase">Checkout</button>
 
     </fieldset>
   {% endif %}

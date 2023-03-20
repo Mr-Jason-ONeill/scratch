@@ -13,7 +13,7 @@
           Looks like your cart is empty.
         </div>
         <p>
-          <a href="#" class="btn btn-dark text-uppercase">Continue Shopping</a>
+          <a href="/collections/all" class="btn btn-dark text-uppercase">Continue Shopping</a>
         </p>
       </div>
 
@@ -24,10 +24,11 @@
           <h3>{{ item.title }}</h3>
           <img src="{{ item.image | image_url: width: 200 }}" alt="{{ item.title }}">
           <p>{{ item.final_line_price | money_without_trailing_zeros }}</p>
-          <a href="{{item.url_to_remove}}">
-            <button class="btn btn-outline-secondary text-uppercase">Remove</button>
+          <br>
+            <button class="btn btn-outline-secondary text-uppercase">	<a href="{{ item.url_to_remove }}">Remove</a></button>
           </a>
         </div>
+        <br>
 
       {% endfor %}
 

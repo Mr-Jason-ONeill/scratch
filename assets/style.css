@@ -58,6 +58,7 @@ a {
 .image-text-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .image-text-container .image-item,

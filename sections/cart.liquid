@@ -25,8 +25,27 @@
           <img src="{{ item.image | image_url: width: 200 }}" alt="{{ item.title }}">
           <p>{{ item.final_line_price | money_without_trailing_zeros }}</p>
           <br>
-            <button class="btn btn-outline-secondary text-uppercase">	<a href="{{ item.url_to_remove }}">Remove</a></button>
-          </a>
+          <label for="quantity">Quantity</label>
+          <br>
+          <div class="cart-item-selector">
+            <button
+              type="button"
+              id="sub "
+              class="sub">-</button>
+            <input
+              type="number"
+              value="1"
+              min="1"
+              max="99" />
+            <button
+              type="button"
+              id="add"
+              class="add">+</button>
+          </div>
+          <br>
+          <button class="btn btn-outline-secondary text-uppercase">
+            <a href="{{ item.url_to_remove }}">Remove</a>
+          </button>
         </div>
         <br>
 

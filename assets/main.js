@@ -34,16 +34,28 @@ const callback = function (e) {
 
 $('.shopify-product-form').on('submit', callback)
 
-$('.add').click(function() {
+// add and subtract buttons to edit quantity values
+// $(this).val() having just this will without .prev() or .next() 
+// will revert the quantity back to one on click
+
+let addQuantity = 
+$("#add").click(function() {
   let currentValue = $(this).prev().val();
   if (currentValue <= 99) {
-    $(this).prev().val(currentValue + 1);
+    $(this).prev().val(++currentValue);
   }
 });
 
-$('.sub').click(function() {
+let subQuantity =
+$("#sub").click(function() {
   let currentValue = $(this).next().val();
   if (currentValue > 1) {
-    $(this).next().val(currentValue - 1);
+    $(this).next().val(--currentValue);
   }
 });
+
+function updatePrice() {
+  let quantity = $('.quantity').val();
+  let newPrice = quantity * "{{ cart_total }}";
+  return;
+}

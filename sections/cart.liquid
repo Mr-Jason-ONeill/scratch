@@ -25,13 +25,15 @@
           <img src="{{ item.image | image_url: width: 200 }}" alt="{{ item.title }}">
           <p>{{ item.final_line_price | money_without_trailing_zeros }}</p>
           <br>
-          <label for="gift">Add a Gift Note:
+          <label for="gift-card">Add a Gift Note:
           </label>
           <input
             type="checkbox"
-            class="gift"
-            id="gift" />
-          <hr>
+            class="gift-note"
+            id="gift-note"
+            onclick="showGiftCard()" />
+          <p id="gift_card" style="none">{{ line_item.gift_card }}</p>
+          <br>
           <label for="quantity">Quantity</label>
           <br>
           <div class="cart-item-selector">
@@ -45,7 +47,7 @@
               id="quantity"
               value="1"
               min="1"
-              max="99" />
+              max="99">
             <button
               type="button"
               id="add"

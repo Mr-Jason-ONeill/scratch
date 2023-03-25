@@ -34,9 +34,9 @@ const callback = function (e) {
 
 $('.shopify-product-form').on('submit', callback)
 
-// add and subtract buttons to edit quantity values
-// $(this).val() having just this will without .prev() or .next() 
-// will revert the quantity back to one on click
+/** add and subtract buttons to edit quantity values.
+$(this).val() having just this will without .prev() or .next() 
+will revert the quantity back to one on click */
 
 $("#add").click(function() {
   let currentValue = $(this).prev().val();
@@ -51,3 +51,13 @@ $("#sub").click(function() {
     $(this).next().val(--currentValue);
   }
 });
+
+
+ $('#gift-note').change(function(showGiftCard) {
+  if($(this).checked) {
+    $('#gift-card').show();
+  } else {
+    $('#gift-card').hide();
+  }
+});
+

@@ -42,6 +42,7 @@ $("#add").click(function() {
   let currentValue = $(this).prev().val();
   if (currentValue <= 99) {
     $(this).prev().val(++currentValue);
+    // need to change input value to currentValue * quantity
   }
 });
 
@@ -49,11 +50,12 @@ $("#sub").click(function() {
   let currentValue = $(this).next().val();
   if (currentValue > 1) {
     $(this).next().val(--currentValue);
+    // need to change input value to currentValue * quantity
   }
 });
 
 
- $('#gift-note').change(function(showGiftCard) {
+ $('#gift-note').change(function() {
   if($(this).checked) {
     $('#gift-card').show();
   } else {

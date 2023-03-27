@@ -12,18 +12,18 @@
     {{ 'hover.css' | asset_url | stylesheet_tag }}
 
     <script
-      src="https://code.jquery.com/jquery-3.6.4.min.js" 
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 
-    <script defer src="{{ 'main.js' | asset_url }}" type="text/javascript"></script>
+    <script
+      defer
+      src="{{ 'main.js' | asset_url }}"
+      type="text/javascript"></script>
 
   </head>
   <body>
     {% render 'header' %}
-
-    <div id="element" class="container my-5">This is an element!</div>
 
     {{ content_for_layout }}
 

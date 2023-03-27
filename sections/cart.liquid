@@ -30,9 +30,7 @@
           <input
             type="checkbox"
             class="gift-note"
-            id="gift-note"
-            onclick="showGiftCard()" />
-          <p id="gift_card" style="none">{{ line_item.gift_card }}</p>
+            id="gift-note" />
           <br>
           <label for="quantity">Quantity</label>
           <br>
@@ -59,8 +57,8 @@
           </button>
         </div>
         <br>
-
       {% endfor %}
+
 
       <hr>
       {% assign cart_total = cart.total_price | money_with_currency %}

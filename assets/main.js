@@ -32,34 +32,70 @@ const callback = function (e) {
   );
 }
 
-$('.shopify-product-form').on('submit', callback)
+$('.shopify-product-form').on('submit', callback);
+
+
+/**
+ * ADDING A GIFT NOTE
+ */
+$('.gift-note').change(function(e) {
+  const inputChecked = this.checked;
+  const $input = $(this);
+  
+  if (inputChecked) {
+    $input.next().next().show();
+  } else {
+    $input.next().next().hide();
+  }
+});
+
 
 /** add and subtract buttons to edit quantity values.
 $(this).val() having just this will without .prev() or .next() 
 will revert the quantity back to one on click */
 
-$("#add").click(function() {
+$(".qty-add").click(function() {
+  const $input = $(this).prev();
+  const maxValue = $input.attr("max");
+  
   let currentValue = $(this).prev().val();
-  if (currentValue <= 99) {
-    $(this).prev().val(++currentValue);
-    // need to change input value to currentValue * quantity
+  if (currentValue <= parseInt(maxValue)) {
+    $input.val(++currentValue);
+    $input.trigger('change');
   }
 });
 
-$("#sub").click(function() {
-  let currentValue = $(this).next().val();
+$(".qty-sub").click(function() {
+  const $input = $(this).next();
+  let currentValue = $input.val();
   if (currentValue > 1) {
-    $(this).next().val(--currentValue);
-    // need to change input value to currentValue * quantity
+    $input.val(--currentValue);
+    $input.trigger('change');
   }
 });
 
+/**
+ * When the input changes, run an ajax call 
+ * to update the quantity of the line item.
+ */
+$(".quantity").on("change", function (e) {
+  const newValue = this.value;
+  const key = this.dataset.key;
+  
+  $.post('/cart/update.js',
+    {
+      updates: {
+        [key]: newValue
+      }
+    },
+    function (data) {
+      console.log(data);
+      $('.current-total').html(data.total_price)
 
- $('#gift-note').change(function() {
-  if($(this).checked) {
-    $('#gift-card').show();
-  } else {
-    $('#gift-card').hide();
-  }
-});
+    },
+    "json"
+  )
+})
+
+
 

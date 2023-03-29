@@ -1,82 +1,92 @@
-{% form 'cart', cart %}
-  <fieldset>
-    <legend>
-      <h2>Your Cart</h2>
-    </legend>
+<div class="container py-5">
+  {% form 'cart', cart %}
+    <fieldset>
+      <legend>
+        <h2>Your Cart</h2>
+      </legend>
 
 
-    <!-- if statement for if Cart is empty -->
-    {% if cart.empty? %}
+      <!-- if statement for if Cart is empty -->
+      {% if cart.empty? %}
 
-      <div class="container">
-        <div class="alert alert-dark">
-          Looks like your cart is empty.
+        <div class="container">
+          <div class="alert alert-dark">
+            Looks like your cart is empty.
+          </div>
+          <p>
+            <a href="/collections/all" class="btn btn-dark text-uppercase">Continue Shopping</a>
+          </p>
         </div>
-        <p>
-          <a href="/collections/all" class="btn btn-dark text-uppercase">Continue Shopping</a>
-        </p>
-      </div>
 
-    {% else %}
+      {% else %}
 
-      {% for item in cart.items %}
-        <div>
-          <h3>{{ item.title }}</h3>
-          <img src="{{ item.image | image_url: width: 200 }}" alt="{{ item.title }}">
-          <p>{{ item.final_line_price | money_without_trailing_zeros }}</p>
-          <br>
-          <label for="gift-card">Add a Gift Note:
-          </label>
-          <input
-            type="checkbox"
-            class="gift-note"
-            id="gift-note" />
-          <br>
-          <label for="quantity">Quantity</label>
-          <br>
-          <div class="cart-item-selector">
-            <button
-              type="button"
-              id="sub"
-              class="btn btn-outline-secondary">-</button>
-            <input
-              type="number"
-              class="quantity"
-              id="quantity"
-              value="1"
-              min="1"
-              max="99">
-            <button
-              type="button"
-              id="add"
-              class="btn btn-outline-secondary">+</button>
+        {% for item in cart.items %}
+          <div>
+            <h3>{{ item.title }}</h3>
+            <img src="{{ item.image | image_url: width: 200 }}" alt="{{ item.title }}">
+            <p>{{ item.final_line_price | money_without_trailing_zeros }}</p>
+            <br>
+            <div>
+              <label for="gift-card">Add a Gift Note:</label>
+              <input
+                type="checkbox"
+                class="gift-note"
+              /><br/>
+              <textarea
+                style="display: none"
+                id="gift-note-submit"
+                name="attributes[Gift Note]"
+              >Enter your gift note here.
+              </textarea>
+            </div>
+            <br>
+            <label for="quantity">
+              Quantity: <span class="current-quantity">{{ item.quantity }}</span>
+            </label>
+            <br>
+            <div class="cart-item-selector">
+              <button
+                type="button"
+                class="qty-sub btn btn-outline-secondary">-</button>
+              <input
+                type="number"
+                data-key="{{ item.key }}"
+                class="quantity"
+                id="quantity_{{ item.id }}"
+                value="{{ item.quantity }}"
+                min="1"
+                max="99">
+              <button
+                type="button"
+                class="qty-add btn btn-outline-secondary">+</button>
+            </div>
+            <br>
+            <button class="btn btn-outline-secondary text-uppercase">
+              <a href="{{ item.url_to_remove }}">Remove</a>
+            </button>
           </div>
           <br>
-          <button class="btn btn-outline-secondary text-uppercase">
-            <a href="{{ item.url_to_remove }}">Remove</a>
-          </button>
-        </div>
-        <br>
-      {% endfor %}
+        {% endfor %}
 
 
-      <hr>
-      {% assign cart_total = cart.total_price | money_with_currency %}
+        <hr>
+        {% assign cart_total = cart.total_price | money_with_currency %}
 
-      <h4 class="total">Total = {{ cart_total }}</h4>
+        <h4 class="total">Total = <span class="current-total">{{ cart_total }}</span></h4>
 
-      <button
-        type="submit"
-        name="update"
-        class="btn btn-outline-secondary text-uppercase">Update</button>
-      <button
-        type="submit"
-        name="checkout"
-        class="btn btn-dark text-uppercase">Checkout</button>
+        <button
+          type="submit"
+          name="update"
+          class="btn btn-outline-secondary text-uppercase">Update</button>
+        <button
+          type="submit"
+          name="checkout"
+          class="btn btn-dark text-uppercase">Checkout</button>
 
-    </fieldset>
-  {% endif %}
-{% endform %}
+      </fieldset>
+    {% endif %}
+  {% endform %}
+</div>
 
 {% schema %}
   {

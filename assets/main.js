@@ -81,7 +81,7 @@ $(".qty-sub").click(function() {
 $(".quantity").on("change", function (e) {
   const newValue = this.value;
   const key = this.dataset.key;
-  
+
   $.post('/cart/update.js',
     {
       updates: {
@@ -97,5 +97,33 @@ $(".quantity").on("change", function (e) {
   )
 })
 
+/**
+ * Remove button to clear line item without refreshing page
+ * using ajax
+ */
 
+// TO DO:
+// - Need to find the line item
+// - Once remove button is clicked
+// - Delete item or update quantity to 0 
+// - Display a message box - to say item removed
 
+function removeLineItem(lineItemId) {
+  var url = '/cart/change.js';
+  var data = {
+    line: lineItemId,
+    quantity: 0,
+    location: 'cart'
+  };
+
+  $.post(url, data, function(cart) {
+    console.log('Item removed successfully!')
+  }, 
+  'json'
+  );
+}
+
+$('#remove').on('click', function() {
+  var lineItemId = $(this).data('line-item-id');
+  removeLineItem(lineItemId);
+});

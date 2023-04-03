@@ -21,7 +21,7 @@
       {% else %}
 
         {% for item in cart.items %}
-          <div class="line_item_area">
+          <div class="line-item-area" data-line-item-id="{{ variant.id }}">
             <h3>{{ item.title }}</h3>
             <img src="{{ item.image | image_url: width: 200 }}" alt="{{ item.title }}">
             <p>{{ item.final_line_price | money_without_trailing_zeros }}</p>

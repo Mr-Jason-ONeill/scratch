@@ -108,22 +108,23 @@ $(".quantity").on("change", function (e) {
 // - Delete item or update quantity to 0 
 // - Display a message box - to say item removed
 
-function removeLineItem(lineItemId) {
-  var url = '/cart/change.js';
-  var data = {
-    line: lineItemId,
+/** function removeLineItem(lineItemId) {
+  let lineItemId = $(this).data('line-item-area');
+  const data = {
+    lineItemId,
     quantity: 0,
     location: 'cart'
   };
 
-  $.post(url, data, function(cart) {
-    console.log('Item removed successfully!')
+  $.post('/cart/change.js',
+    data,
+    function() {
+    console.log(data);
   }, 
-  'json'
+  "json"
   );
-}
 
-$('#remove').on('click', function() {
-  var lineItemId = $(this).data('line-item-id');
-  removeLineItem(lineItemId);
-});
+  $('#remove').on('click', function() {
+    removeLineItem(lineItemId);
+  });
+} */

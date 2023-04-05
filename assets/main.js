@@ -108,23 +108,25 @@ $(".quantity").on("change", function (e) {
 // - Delete item or update quantity to 0 
 // - Display a message box - to say item removed
 
-/** function removeLineItem(lineItemId) {
-  let lineItemId = $(this).data('line-item-area');
-  const data = {
-    lineItemId,
-    quantity: 0,
-    location: 'cart'
-  };
 
-  $.post('/cart/change.js',
-    data,
-    function() {
-    console.log(data);
-  }, 
-  "json"
-  );
+$('#remove').on('click', function(removing) {
+  removing.preventDefault();
+  let lineItemId = $(this).data('line-item-id');
+});
+ 
+  function removeLineItem(lineItemId) {
 
-  $('#remove').on('click', function() {
-    removeLineItem(lineItemId);
-  });
-} */
+    let data = {
+      lineItemId,
+      quantity: 0,
+      location: '/cart'
+    };
+  
+    $.post('/cart/change.js',
+      data,
+      function() {
+      console.log(data);
+    }, 
+    "json"
+    ); 
+  }

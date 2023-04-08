@@ -1,9 +1,41 @@
-.company-name {
-  display: flex;
-  justify-content: center;
+body {
+  background-image: linear-gradient(90deg, transparent 0%, transparent 12%, rgb(243,197,147) 12%, rgb(243,197,147) calc(12% + 2px),
+  transparent calc(12% + 2px), transparent calc(12% + 6px), rgb(243,197,147) calc(12% + 6px), rgb(243,197,147) calc(12% + 8px), 
+  transparent calc(12% + 8px), transparent 100%), 
+  linear-gradient(180deg, rgb(251,238,159) 12%, transparent 12%),
+   repeating-linear-gradient(180deg, rgb(201,215,152) 0px, rgb(201,215,152) 2px, transparent 2px, transparent 32px), 
+   linear-gradient(rgb(251,238,159),rgb(251,238,159));
 }
 
-li,
+header {
+  z-index: 20;
+ /*  position: fixed; */
+  width: 100%;
+  border-radius: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-image: linear-gradient(90deg, transparent 0%, transparent 12%, rgb(243,197,147) 12%, rgb(243,197,147) calc(12% + 2px),
+   transparent calc(12% + 2px), transparent calc(12% + 6px), rgb(243,197,147) calc(12% + 6px), rgb(243,197,147) calc(12% + 8px), 
+   transparent calc(12% + 8px), transparent 100%), 
+   linear-gradient(180deg, rgb(251,238,159) 12%, transparent 12%),
+    repeating-linear-gradient(180deg, rgb(201,215,152) 0px, rgb(201,215,152) 2px, transparent 2px, transparent 32px), 
+    linear-gradient(rgb(251,238,159),rgb(251,238,159));
+}
+
+.company-name,
+.new {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.new {
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: xx-large;
+}
+
+.nav-link,
 a {
   color: black;
   text-decoration: none;
@@ -35,6 +67,7 @@ a {
 .icon-message,
 .alt-message {
   display: flex;
+  padding-top: 25px;
   justify-content: space-evenly;
 }
 
@@ -84,8 +117,44 @@ a {
 .card {
   justify-content: center;
   align-items: center;
+  background: transparent;
+  border: none;
 }
 
 .empty-cart {
   border: 1px solid grey;
+}
+
+.product-title,
+.product-price,
+.product-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 20px;
+}
+
+.text-item {
+  font-family:'Times New Roman', Times, serif;
+}
+
+.container {
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+
+  display: block;
+  border: solid 3px black;
+  padding: 40px 60px;
+  max-width: 98%;
+  margin: 100px auto 0;
+  font-size: 17px;
+  line-height: 28px;
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0);
+}
+
+.hero-pad {
+  max-width: fit-content;
 }

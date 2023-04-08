@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container pt-10">
   <h1 class="h2">{{ product.title }}</h1>
   <p>{{ product.price | money_with_currency }}</p>
 
-  <div>
+  <div class="product-content">
     {% comment %} product.description displays the same thing --> {% endcomment %}
     {{ product.content }}
   </div>
@@ -19,7 +19,10 @@
     <button type="submit" class="btn btn-dark text-uppercase">Add to Cart</button>
   {% endform %}
 
-  <div class="on-success-form alert alert-success" role="alert" style="display: none">
+  <div
+    class="on-success-form alert alert-success"
+    role="alert"
+    style="display: none">
     Congrats! Just added {{ product.title }} to cart!
   </div>
 </div>

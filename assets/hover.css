@@ -1,11 +1,9 @@
-a:hover {
-    color: grey;
-    transition: ease-in 0.5s;
-  }
-  
-  li:hover {
-    background-color: black;
-    transition: ease-in-out 0.7s;
+  .nav-link:hover,
+  i:hover {
+    transition: ease-out 0.7s;
+    border-radius: 10px;
+    text-decoration: line-through red 2px;
+
   }
 
   .icon-item:hover {
@@ -21,7 +19,8 @@ a:hover {
     opacity: 0;
     transition: opacity 0.3s;
   }
-  
+
   .product-item .image-swap:hover .image-on-hover {
     opacity: 1;
   }
+

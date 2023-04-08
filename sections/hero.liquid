@@ -8,10 +8,8 @@
   {% if background_image %}
     {{ background_image | image_url: width: 2500 | image_tag: preload: true, class: "hero__background-image" }}
   {% endif %}
-  <div class="container position-relative z-10 bg-white">
-    <h1>
-      I Can Be Your Hero
-    </h1>
+  <div class="hero-pad container position-relative z-10 bg-white">
+    <h1>This is the Hero pad</h1>
   </div>
   {{ header }}
 </div>

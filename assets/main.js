@@ -21,7 +21,6 @@ const callback = function (e) {
     ]
   }
   
-
   $.post(
     '/cart/add.js', 
     objectData,
@@ -90,7 +89,7 @@ $(".quantity").on("change", function (e) {
     },
     function (data) {
       console.log(data);
-      $('.current-total').html(data.total_price)
+      $('.current-total').html(Shopify.formatMoney(data.total_price, '${{amount}}'))
 
     },
     "json"
@@ -108,25 +107,29 @@ $(".quantity").on("change", function (e) {
 // - Delete item or update quantity to 0 
 // - Display a message box - to say item removed
 
-
-$('#remove').on('click', function(removing) {
-  removing.preventDefault();
-  let lineItemId = $(this).data('line-item-id');
+$('.remove').on('click', function(e) {
+  e.preventDefault();
+  let lineItemKey = $(this).data('line-item-key');
+  if (lineItemKey) removeLineItem(lineItemKey);
 });
  
-  function removeLineItem(lineItemId) {
+function removeLineItem(lineItemKey) {
+  const $lineItemRow = $(".line-item-area[data-line-item-key=\"" + lineItemKey + "\"]");
 
-    let data = {
-      lineItemId,
-      quantity: 0,
-      location: '/cart'
-    };
-  
-    $.post('/cart/change.js',
-      data,
-      function() {
-      console.log(data);
-    }, 
-    "json"
-    ); 
+  let data = {
+    id: lineItemKey,
+    quantity: 0,
+  };
+
+  const onSuccess = function (data) {
+    $lineItemRow.remove();
+    $('.current-total').html(Shopify.formatMoney(data.total_price, '${{amount}}')); 
   }
+
+  $.post(
+    '/cart/change.js',
+    data,
+    onSuccess,
+    "json"
+  );
+}

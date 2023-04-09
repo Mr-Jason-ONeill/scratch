@@ -13,12 +13,12 @@ header {
   width: 100%;
   border-radius: 5px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-image: linear-gradient(90deg, transparent 0%, transparent 12%, rgb(243,197,147) 12%, rgb(243,197,147) calc(12% + 2px),
-   transparent calc(12% + 2px), transparent calc(12% + 6px), rgb(243,197,147) calc(12% + 6px), rgb(243,197,147) calc(12% + 8px), 
-   transparent calc(12% + 8px), transparent 100%), 
-   linear-gradient(180deg, rgb(251,238,159) 12%, transparent 12%),
-    repeating-linear-gradient(180deg, rgb(201,215,152) 0px, rgb(201,215,152) 2px, transparent 2px, transparent 32px), 
-    linear-gradient(rgb(251,238,159),rgb(251,238,159));
+  background-image: linear-gradient(180deg, rgb(106,42,27), rgb(106,42,27) 10%, transparent calc(10% + 2px)),
+  linear-gradient(90deg, transparent 0%, transparent 12%, rgb(245,196,146) 12%, rgb(245,196,146) calc(12% + 2px), 
+  transparent calc(12% + 2px), transparent calc(12% + 6px), rgb(245,196,146) calc(12% + 6px), rgb(245,196,146) calc(12% + 8px),
+  transparent calc(12% + 8px), transparent 100%), linear-gradient(180deg, rgb(251,238,159) 22%, transparent 22%),
+   repeating-linear-gradient(180deg, rgb(201,215,152) 0px, rgb(201,215,152) 2px, transparent 2px, transparent 36px), 
+   linear-gradient(rgb(251,238,159),rgb(251,238,159));
 }
 
 .company-name,

@@ -4,16 +4,16 @@
       "type": "hero",
       "settings": {
         "header": "",
-        "background_image": "shopify:\/\/shop_images\/woman-infront-of-tree-with-berries.jpeg"
+        "background_image": "shopify:\/\/shop_images\/overcast-59th-street-bridge.jpg"
       }
     },
     "featured-products": {
       "type": "featured-products",
       "settings": {
         "products": [
-          "black-leather-bag",
-          "blue-silk-tuxedo",
-          "chequered-red-shirt"
+          "led-high-tops",
+          "navy-sport-jacket",
+          "yellow-wool-jumper"
         ]
       }
     }

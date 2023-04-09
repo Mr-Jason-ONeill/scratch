@@ -9,7 +9,7 @@ body {
 
 header {
   z-index: 20;
- /*  position: fixed; */
+ /*  position: fixed; Haven't decided if I want this yet*/
   width: 100%;
   border-radius: 5px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -67,7 +67,7 @@ a {
 .icon-message,
 .alt-message {
   display: flex;
-  padding-top: 25px;
+  padding: 25px;
   justify-content: space-evenly;
 }
 
@@ -77,6 +77,8 @@ a {
 
 .hero {
   height: 90vh;
+  border-top: solid 1px red;
+  border-bottom: solid 1px red;
 }
 
 .hero__background-image {
@@ -98,6 +100,12 @@ a {
 .image-text-container .text-item {
   width: 50%;
   font-size: large;
+}
+
+.image-item {
+  border-left: solid 2px navy;
+  border-bottom: solid 2px navy;
+  border-top: solid 2px navy;
 }
 
 
@@ -157,4 +165,8 @@ a {
 
 .hero-pad {
   max-width: fit-content;
+}
+
+.product-image {
+  border: solid 2px navy;
 }

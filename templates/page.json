@@ -1,11 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "alternate_header": ""
-      }
-    },
     "fifth": {
       "type": "cards",
       "settings": {
@@ -18,14 +12,14 @@
         "9e0c928b-efa0-4376-9eeb-8a6ce50573fe": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify:\/\/shop_images\/a-hand-removes-a-sweater-from-a-clothing-rack.jpg",
+            "image": "shopify:\/\/shop_images\/golden-autumn-leaves.jpg",
             "text": "As a patch of light Sea of Tranquility the only home we've ever known invent the universe venture Orion's sword. Vastness is bearable only through love prime number rich in mystery great turbulent clouds citizens of distant epochs Tunguska event."
           }
         },
         "eb0cf5d7-c13f-4540-a6b8-04cd48e33270": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify:\/\/shop_images\/iphone-detects-qr-code.jpg",
+            "image": "shopify:\/\/shop_images\/hiker-running-up-beaten-track-between-the-trees.jpg",
             "text": "The ash of stellar alchemy Tunguska event brain is the seed of intelligence not a sunrise but a galaxyrise across the centuries paroxysm of global death? Two ghostly white figures in coveralls and helmets are softly dancing permanence of the stars take root and flourish the carbon in our apple pies preserve and cherish that pale blue dot a very small stage in a vast cosmic arena and billions upon billions upon billions."
           }
         }
@@ -50,7 +44,7 @@
         "9e0c928b-efa0-4376-9eeb-8a6ce50573fe": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify:\/\/shop_images\/model-poses-near-bushes.jpg",
+            "image": "shopify:\/\/shop_images\/business-meeting-over-coffee.jpg",
             "text": "Make it pop labrador is there a way we can make the page feel more introductory without being cheesy. Mmm, exactly like that, but different. We have big contacts we will promote you just do what you think. I trust you, for make it pop, for can you please send me the design specs again?"
           }
         }
@@ -61,13 +55,19 @@
       "settings": {
         "checkbox": true
       }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "alternate_header": ""
+      }
     }
   },
   "order": [
-    "main",
     "fifth",
     "second",
     "third",
-    "fourth"
+    "fourth",
+    "main"
   ]
 }

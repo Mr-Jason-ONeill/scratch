@@ -1,13 +1,12 @@
 <div class="product-item">
   <a href=" {{ product.url }}">
-    <div class="image-swap rounded overflow-hidden position-relative">
+    <div class="product-image image-swap rounded overflow-hidden position-relative">
       {{ product | image_url: width: 600 | image_tag: loading: "lazy", class: "primary-image" }}
 
       {% if product.images.size > 1 %}
         {{ product.images[1] 
-          | image_url: width: 600 
-          | image_tag: loading: "lazy", class: "image-on-hover" 
-        }}  
+         | image_url: width: 600
+         | image_tag: loading: "lazy", class: "image-on-hover" }}
       {% endif %}
     </div>
 

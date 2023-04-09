@@ -1,11 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "alternate_header": ""
-      }
-    },
     "fifth": {
       "type": "cards",
       "settings": {
@@ -61,13 +55,19 @@
       "settings": {
         "checkbox": true
       }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "alternate_header": ""
+      }
     }
   },
   "order": [
-    "main",
     "fifth",
     "second",
     "third",
-    "fourth"
+    "fourth",
+    "main"
   ]
 }

@@ -179,3 +179,15 @@ select {
 .current {
   visibility: hidden;
 }
+
+.page,
+.next,
+.prev {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  font-weight: 300;
+}
+
+.form-control {
+  border: solid 1px navy;
+}

@@ -207,3 +207,9 @@ select {
 .form-control {
   border: solid 1px navy;
 }
+
+
+/* -----  For some reason, only works at the bottom of CSS page */
+.hero-pad {
+  max-width: fit-content;
+}

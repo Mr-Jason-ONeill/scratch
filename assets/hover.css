@@ -1,15 +1,25 @@
+    /* --------   TEXT DECORATION */
+    .nav-link:hover,
+    .page:hover,
+    .next:hover,
+    .prev:hover {
+      text-decoration: line-through solid 2px red;
+  
+    }
+  
   .nav-link:hover {
     transition: ease-out 0.7s;
     border-radius: 10px;
-    text-decoration: line-through red 2px;
-
   }
 
+  /* --------- ICONS */
   .icon-item:hover {
     cursor: pointer;
     opacity: 0.7;
   }
 
+
+  /* ---------  PRODUCT & IMAGES */
   .product-item .image-swap .image-on-hover {
     position: absolute;
     z-index: 10;
@@ -21,11 +31,4 @@
 
   .product-item .image-swap:hover .image-on-hover {
     opacity: 1;
-  }
-
-  .page:hover,
-  .next:hover,
-  .prev:hover {
-    text-decoration: line-through solid 2px red;
-
   }

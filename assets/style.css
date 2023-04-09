@@ -1,3 +1,4 @@
+/* ------------ BACKGROUND COLORS */
 body {
   background-image: linear-gradient(90deg, transparent 0%, transparent 12%, rgb(243,197,147) 12%, rgb(243,197,147) calc(12% + 2px),
   transparent calc(12% + 2px), transparent calc(12% + 6px), rgb(243,197,147) calc(12% + 6px), rgb(243,197,147) calc(12% + 8px), 
@@ -21,20 +22,64 @@ header {
    linear-gradient(rgb(251,238,159),rgb(251,238,159));
 }
 
+/* HERO */
+.hero {
+  height: 90vh;
+  border-top: solid 1px red;
+  border-bottom: solid 1px red;
+}
+
+.hero__background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.hero-pad {
+  max-width: fit-content;
+}
+
+
+/* -------------   TEXTS & FONTS RELATED */
+.page,
+.next,
+.prev,
+.card-text,
+.card-title,
+.icon-item,
+.new,
+.product-title,
+.product-price,
+.product-content,
+.text-item {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.page,
+.next,
+.prev, 
+.company-name,
+.new {
+  font-size: large;
+  font-weight: 300;
+}
+
 .company-name,
 .new {
   display: flex;
   justify-content: center;
-  font-size: large;
-  font-weight: bold;
 }
 
 .new {
   padding: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: xx-large;
 }
 
+
+/* ----------    NAV & LINKS */ 
 .nav-link,
 a {
   color: black;
@@ -51,6 +96,24 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/* CONTAINERS, GRIDS & ITEMS */
+.container {
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+
+  display: block;
+  border: solid 3px black;
+  padding: 40px 60px;
+  max-width: 98%;
+  margin: 100px auto 0;
+  font-size: 17px;
+  line-height: 28px;
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0);
 }
 
 .grid-container {
@@ -75,21 +138,6 @@ a {
   justify-content: center;
 }
 
-.hero {
-  height: 90vh;
-  border-top: solid 1px red;
-  border-bottom: solid 1px red;
-}
-
-.hero__background-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  object-fit: cover;
-  opacity: 0.6;
-}
-
 .image-text-container {
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +156,6 @@ a {
   border-top: solid 2px navy;
 }
 
-
 .collection-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -122,6 +169,20 @@ a {
   object-fit: cover;
 }
 
+/* --------   SECTIONS RELATED */
+.product-title,
+.product-price,
+.product-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-image {
+  border: solid 2px navy;
+}
+
 .card {
   justify-content: center;
   align-items: center;
@@ -133,43 +194,6 @@ a {
   border: 1px solid grey;
 }
 
-.product-title,
-.product-price,
-.product-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 20px;
-}
-
-.text-item {
-  font-family:'Times New Roman', Times, serif;
-}
-
-.container {
-  border-top-left-radius: 37px 140px;
-  border-top-right-radius: 23px 130px;
-  border-bottom-left-radius: 110px 19px;
-  border-bottom-right-radius: 120px 24px;
-
-  display: block;
-  border: solid 3px black;
-  padding: 40px 60px;
-  max-width: 98%;
-  margin: 100px auto 0;
-  font-size: 17px;
-  line-height: 28px;
-  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0);
-}
-
-.hero-pad {
-  max-width: fit-content;
-}
-
-.product-image {
-  border: solid 2px navy;
-}
 
 select {
   border: solid 1px red;
@@ -178,14 +202,6 @@ select {
 
 .current {
   visibility: hidden;
-}
-
-.page,
-.next,
-.prev {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: large;
-  font-weight: 300;
 }
 
 .form-control {

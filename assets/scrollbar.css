@@ -1,14 +1,14 @@
-/* Hide the default scrollbar */
+/* ------------ HIDE DEFAULT */
 ::-webkit-scrollbar {
     width: 0.7em;
   }
   
-  /* Track */
+  /* ------------ TRACK LINE */
   ::-webkit-scrollbar-track {
     background-color: rgb(73, 23, 14);
   }
   
-  /* Handle */
+  /* ------------ SCROLLBAR */
   ::-webkit-scrollbar-thumb {
     background-color: black;
     border-radius: 10px;

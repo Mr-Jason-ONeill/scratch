@@ -170,3 +170,12 @@ a {
 .product-image {
   border: solid 2px navy;
 }
+
+select {
+  border: solid 1px red;
+  border-radius: 5px;
+}
+
+.current {
+  visibility: hidden;
+}

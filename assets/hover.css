@@ -1,5 +1,4 @@
-  .nav-link:hover,
-  i:hover {
+  .nav-link:hover {
     transition: ease-out 0.7s;
     border-radius: 10px;
     text-decoration: line-through red 2px;
@@ -24,3 +23,9 @@
     opacity: 1;
   }
 
+  .page:hover,
+  .next:hover,
+  .prev:hover {
+    text-decoration: line-through solid 2px red;
+
+  }

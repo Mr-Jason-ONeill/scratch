@@ -1,6 +1,6 @@
 <div class="container pt-10">
-  <h1 class="h2">{{ product.title }}</h1>
-  <p>{{ product.price | money_with_currency }}</p>
+  <h1 class="product-title h2">{{ product.title }}</h1>
+  <p class="product-price">{{ product.price | money_with_currency }}</p>
 
   <div class="product-content">
     {% comment %} product.description displays the same thing --> {% endcomment %}

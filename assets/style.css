@@ -38,10 +38,6 @@ header {
   opacity: 0.6;
 }
 
-.hero-pad {
-  max-width: fit-content;
-}
-
 
 /* -------------   TEXTS & FONTS RELATED */
 .page,
@@ -64,7 +60,7 @@ header {
 .company-name,
 .new {
   font-size: large;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .company-name,
@@ -90,12 +86,11 @@ a {
   align-items: center;
   align-content: space-around;
   flex-direction: column;
+  justify-content: center;
 }
 
 a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; 
 }
 
 
@@ -176,7 +171,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .product-image {
@@ -209,7 +203,7 @@ select {
 }
 
 
-/* -----  For some reason, only works at the bottom of CSS page */
+/* -----  Need to work out what is stopping it working further up the page */
 .hero-pad {
   max-width: fit-content;
 }

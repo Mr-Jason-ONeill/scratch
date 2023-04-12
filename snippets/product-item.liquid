@@ -9,12 +9,12 @@
          | image_tag: loading: "lazy", class: "image-on-hover" }}
       {% endif %}
     </div>
-
-    <h3 class="pt-3">{{ product.title | upcase }}</h3>
-    <p class="mb-0">
-      {{ product.price | money_with_currency }}
-    </p>
   </a>
+
+  <h3 class="product-title pt-3">{{ product.title | upcase }}</h3>
+  <p class="product-price mb-0">
+    {{ product.price | money_with_currency }}
+  </p>
 
   <a href="{{ product.url }}">
     <button type="button" class="btn btn-dark text-uppercase">

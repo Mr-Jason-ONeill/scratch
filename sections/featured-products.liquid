@@ -1,34 +1,7 @@
 <h2 class="new">NEW STOCK!</h2>
 
 {% for product in section.settings.products %}
-  <!--  
-  Tidying featured page.
-
-  <h2 class="product-title">{{ product.title }}</h2>
-  <p class="product-price">{{ product.price | money_with_currency }}</p>
-  <div class="product-content">
-  {% comment %} product.description displays the same thing {% endcomment %}
-  {{ product.content }}
-  </div> -->{% render 'product-item', product: product %}
-
-  <!-- {% form 'product', product %}
-  <select name="id">
-  {% for variant in product.variants %}
-  <option value="{{ variant.id }}">
-  {{ variant.title }}
-  </option>
-  {% endfor %}
-  </select>
-
-  <button type="submit" class="btn btn-outline-secondary text-uppercase">Add to Cart</button>
-
-  <div
-  class="on-success-form alert alert-success"
-  role="alert"
-  style="display: none">
-  Congrats! Just added {{ product.title }} to cart!
-  </div>
-  {% endform %} -->
+  {% render 'product-item', product: product %}
 {% endfor %}
 
 
@@ -45,3 +18,33 @@
     ]
   }
 {% endschema %}
+
+
+<!--  
+Tidying featured page. Removing this to see how it feels.
+
+<h2 class="product-title">{{ product.title }}</h2>
+<p class="product-price">{{ product.price | money_with_currency }}</p>
+<div class="product-content">
+{% comment %} product.description displays the same thing {% endcomment %}
+{{ product.content }}
+</div> {% render 'product-item', product: product %} -->
+
+<!-- {% form 'product', product %}
+<select name="id">
+{% for variant in product.variants %}
+<option value="{{ variant.id }}">
+{{ variant.title }}
+</option>
+{% endfor %}
+</select>
+
+<button type="submit" class="btn btn-outline-secondary text-uppercase">Add to Cart</button>
+
+<div
+class="on-success-form alert alert-success"
+role="alert"
+style="display: none">
+Congrats! Just added {{ product.title }} to cart!
+</div>
+{% endform %} -->

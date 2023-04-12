@@ -4,13 +4,10 @@
     .next:hover,
     .prev:hover {
       text-decoration: line-through solid 2px red;
+      transition: ease-out 0.7s;
   
     }
-  
-  .nav-link:hover {
-    transition: ease-out 0.7s;
-    border-radius: 10px;
-  }
+
 
   /* --------- ICONS */
   .icon-item:hover {
@@ -20,7 +17,7 @@
 
 
   /* ---------  PRODUCT & IMAGES */
-  .product-item .image-swap .image-on-hover {
+  .image-swap .image-on-hover {
     position: absolute;
     z-index: 10;
     left: 0;

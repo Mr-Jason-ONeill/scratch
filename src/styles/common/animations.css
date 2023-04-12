@@ -1,0 +1,56 @@
+.arrow-animation {
+  .icon-arrow {
+    @apply transition-all duration-300;
+  }
+
+  &:hover {
+    .icon-arrow {
+      @apply translate-x-2;
+    }
+  }
+}
+
+.plus-minus-toggle {
+  cursor: pointer;
+  height: 21px;
+  position: relative;
+  width: 21px;
+  transform: translateY(50%);
+  margin-top: -1px;
+
+  &:before,
+  &:after {
+    background: currentcolor;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 21px;
+    transition: transform 500ms ease;
+  }
+
+  &:after {
+    transform-origin: center;
+  }
+}
+
+button.collapsed {
+  .plus-minus-toggle {
+    &:after {
+      transform: rotate(90deg);
+    }
+
+    &:before {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.fade-in {
+  @apply opacity-100;
+}
+
+.grow-width {
+  @apply w-[var(--width)];
+}

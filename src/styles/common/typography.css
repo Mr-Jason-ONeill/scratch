@@ -1,0 +1,105 @@
+@layer utilities {
+  .h1:not(.text-display) {
+    @apply
+      text-8xl
+      md:text-8xl
+      leading-tight;
+  
+    i, em {
+      @apply 
+        text-10xl
+        md:text-10xl;
+    }
+  }
+  
+  .h2,
+  h2:not([class]) {
+    @apply
+      leading-tight
+      font-header
+      font-normal
+      text-7xl
+      md:text-7xl;
+    
+    i, em {
+      @apply text-9xl;
+    }
+  }
+  
+  .h3,
+  h3:not([class]) {
+    @apply
+      text-3xl;
+  }
+  
+  .h4 {
+    @apply 
+      text-base
+      font-medium;
+  }
+  
+  .h5 {
+    @apply 
+      text-sm; 
+  }
+  
+  .h5-caps {
+    @apply
+      text-sm
+      uppercase
+      font-medium
+      tracking-wider;
+  
+  }
+  
+  .h6 {
+    @apply 
+      text-xs;
+  }
+}
+
+p,
+.p,
+ul,
+.ul {
+  @apply 
+    font-normal
+    leading-relaxed;
+}
+
+.p-small {
+  @apply text-sm;
+}
+
+.caption-caps {
+  @apply 
+    tracking-wider
+    text-xs
+    font-semibold
+    uppercase;
+}
+
+.caption-caps-lg {
+  @apply 
+    tracking-wider
+    text-base
+    font-semibold
+    uppercase;
+}
+
+i, em {
+  @apply font-italic italic;
+}
+
+.square-list,
+.square-list ul {
+  > li {
+    @apply pl-8 relative mb-2 last-of-type:mb-0;
+
+    &::before {
+      content: "";
+
+      @apply w-4 h-4 border border-black absolute left-0 top-[0.75rem] -translate-y-1/2;
+    }
+  }
+}

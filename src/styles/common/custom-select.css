@@ -1,0 +1,45 @@
+.custom-select-container {
+  @apply relative w-full font-body text-sm;
+
+  &::after {
+    content: "";
+
+    @apply absolute right-6 w-2 h-2 border-r border-black border-b top-1/2 transform -translate-y-1/2 rotate-45 transition-all;
+  }
+
+  &.is-open::after {
+    @apply -rotate-[135deg];
+  }
+
+  select {
+    @apply hidden;
+  }
+
+  &.is-open .custom-select-panel {
+    @apply block;
+  }
+
+  .custom-select-opener {
+    @apply cursor-pointer border p-4 rounded-lg relative flex w-full items-center;
+
+    > span {
+      @apply my-px
+    }
+  }
+
+  .custom-select-panel {
+    @apply hidden absolute top-full left-0 z-50 bg-white right-0 border mt-1 rounded-lg overflow-hidden shadow-md;
+  }
+
+  .custom-select-option {
+    @apply px-4 py-4 cursor-pointer;
+  }
+
+  .custom-select-option.has-focus {
+    @apply bg-yellowLight;
+  }
+
+  .custom-select-option[data-value=""] {
+    @apply bg-gray-100 pointer-events-none;
+  }
+}

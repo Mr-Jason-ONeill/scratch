@@ -1,0 +1,45 @@
+:root {
+  --section-spacing: 4.5rem;
+}
+
+.section.section--spacing-sm {
+  --section-spacing: 1.875rem;
+}
+
+.section.section--spacing-md {
+  --section-spacing: 2.5rem;
+
+  @screen md {
+    --section-spacing: 3rem;
+  }
+}
+
+.section.section--spacing-lg {
+  --section-spacing: 3.25rem;
+
+  @screen md {
+    --section-spacing: 5.25rem;
+  }
+}
+
+.section {
+  margin-top: var(--section-spacing);
+  margin-bottom: var(--section-spacing);
+
+  &.has-bg {
+    padding-top: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+  }
+}
+
+.section-collection-header + .section-collection-grid {
+  .section {
+    @apply !mt-0;
+  }
+}
+
+.section-collection-grid:not(:last-of-type) {
+  .section {
+    @apply !mb-0 !pb-0;
+  }
+}

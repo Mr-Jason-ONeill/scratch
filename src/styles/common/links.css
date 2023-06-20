@@ -1,0 +1,72 @@
+@layer components {
+  .button {
+    @apply
+      tracking-wider
+      font-medium
+      md:font-semibold
+      text-xs
+      rounded-full
+      text-center
+      uppercase
+      py-3.5
+      px-6
+      md:px-12
+      transition-all;
+
+    &.primary {
+      @apply bg-yellowDark text-white border border-yellowDark;
+
+      &:hover {
+        @apply bg-transparent border-yellowDark text-yellowDark;
+      }
+
+      &.on-dark {
+        @apply bg-white text-darkGrey border-white;
+
+        &:hover {
+          @apply bg-yellowDark border-yellowDark text-white;
+        }
+      }
+    }
+
+    &.small {
+      @apply py-3 px-4 md:px-8;
+    }
+
+    &:hover {
+      @apply bg-opacity-80;
+    }
+
+    &.outlined {
+      @apply border border-yellowDark text-yellowDark;
+
+      &:hover {
+        @apply bg-yellowDark border-yellowDark text-white;
+      }
+
+      &.on-dark {
+        @apply border-white text-white;
+
+        &:hover {
+          @apply bg-yellowDark border-yellowDark text-white;
+        }
+      }
+    }
+
+    &.outlined-v2 {
+      @apply border-2 border-yellowDark;
+
+      &:hover {
+        @apply bg-yellowDark border-yellowDark text-white;
+      }
+
+      &.on-dark {
+        @apply border-white text-white;
+      }
+    }
+
+    &.min-w {
+      @apply w-full max-w-[160px] md:max-w-[250px];
+    }
+  }
+}

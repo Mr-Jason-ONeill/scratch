@@ -38,6 +38,10 @@ header {
   opacity: 0.6;
 }
 
+.hero .hero-pad {
+  max-width: fit-content;
+}
+
 
 /* -------------   TEXTS & FONTS RELATED */
 .page,
@@ -74,6 +78,15 @@ header {
   font-size: xx-large;
 }
 
+.product-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-item > a {
+  display: block;
+  margin: auto;
+}
 
 /* ----------    NAV & LINKS */ 
 .nav-link,
@@ -203,7 +216,3 @@ select {
 }
 
 
-/* -----  Need to work out what is stopping it working further up the page */
-.hero-pad {
-  max-width: fit-content;
-}

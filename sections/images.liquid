@@ -1,8 +1,11 @@
 <div class="container py-5">
   {% for block in section.blocks %}
-    <div class="image-text-container">
-      <div class="image-item {% if section.settings.checkbox %} order-1{% endif %}">
-        <img src="{{ block.settings.image | image_url: width: 500 }}" alt="Images">
+    <div id="carousel" class="image-text-container">
+      <div id="carousel-inner" class="image-item {% if section.settings.checkbox %} order-1{% endif %}">
+        <img
+          id="carousel-item"
+          src="{{ block.settings.image | image_url: width: 500 }}"
+          alt="Images">
       </div>
       <div class="text-item">
         {{ block.settings.text }}

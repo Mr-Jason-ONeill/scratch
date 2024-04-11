@@ -4,16 +4,15 @@
       "type": "hero",
       "settings": {
         "header": "",
-        "background_image": "shopify:\/\/shop_images\/overcast-59th-street-bridge.jpg"
+        "background_image": "shopify:\/\/shop_images\/startup-desk.jpg"
       }
     },
     "featured-products": {
       "type": "featured-products",
       "settings": {
         "products": [
-          "led-high-tops",
-          "navy-sport-jacket",
-          "yellow-wool-jumper"
+          "structure-style",
+          "structure-style-work"
         ]
       }
     }

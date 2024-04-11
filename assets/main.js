@@ -133,3 +133,12 @@ function removeLineItem(lineItemKey) {
     "json"
   );
 }
+
+$(document).ready(function(){
+  $('.carousel-inner').slick({
+    slidesToShow: 3, // Number of blocks to display at once
+    slidesToScroll: 1, // Number of blocks to scroll at a time
+    autoplay: true, // Autoplay the carousel
+    autoplaySpeed: 2000 // Autoplay speed in milliseconds
+  });
+});
